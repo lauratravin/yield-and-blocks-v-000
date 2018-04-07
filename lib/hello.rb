@@ -6,7 +6,7 @@ def hello_t(array)
   end
 end
 
-yielding { |i|
+hello_t { |i|
    if array[i].start_with?("T")
   puts "Hi, #{array[i]}"
 end
