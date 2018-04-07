@@ -6,10 +6,10 @@ def hello_t(array)
   end
 end
 
-hello_t { |i|
+hello_t(array) { |i|
    if array[i].start_with?("T")
-  puts "Hi, #{array[i]}"
-end
+      puts "Hi, #{array[i]}"
+   end
 }
 
 # call your method here!
