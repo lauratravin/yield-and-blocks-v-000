@@ -11,5 +11,3 @@ hello_t(["Tim", "Tom", "Jim"]) { |name|
       puts "Hi, #{name}"
    end
 }
-
-# call your method here!
