@@ -2,13 +2,13 @@ def hello_t(array)
   i = 0
   while i<array.length
     i = i + 1
-    yield(i)
+    yield(array[i])
   end
 end
 
-hello_t(array) { |i|
-   if array[i].start_with?("T")
-      puts "Hi, #{array[i]}"
+hello_t(array) { |name|
+   if name.start_with?("T")
+      puts "Hi, #{name}"
    end
 }
 
