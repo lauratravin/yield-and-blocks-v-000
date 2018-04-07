@@ -1,9 +1,15 @@
 def hello_t(array)
   i = 0
   while i<array.length
-    i = i + 1    
-  end  
+    i = i + 1
+    yield(i)
+  end
 end
 
-# call your method here!
+yielding {
+   if array[i].start_with?("T")
+  puts "Hi, #{array[i]}"
+end
+}
 
+# call your method here!
